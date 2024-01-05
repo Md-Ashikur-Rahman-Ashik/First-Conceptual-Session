@@ -21,6 +21,7 @@
     background-image: url(https://images.unsplash.com/photo-1518655513281-e90740bd56b0?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     height: 100vh;
     background-size: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .article, #landType{
@@ -30,12 +31,13 @@
     margin-top: 60px;
     margin-bottom: 60px; */
     margin: 60px auto;
-    border: 15px solid yellow;
-    background-color: skyblue;
+    /* border: 15px solid yellow;
+    background-color: skyblue; */
     padding: 60px;
+    background: linear-gradient(10deg, pink, skyblue, red);
 }
 
-.article h2{
+.article h2, #landType h2{
     text-align: center;
     font-size: 48px;
     /* border-bottom: 10px; */
@@ -55,8 +57,23 @@
 }
 
 .important{
-    font-size: 2rem;
+    font-size: 1em;
     background-color: yellow;
     width: 600px;
     display: inline-block;
+}
+
+.landImages{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.landImages div{
+    width: 300px;
+}
+
+.landImages img{
+    width: 100%;
 }
